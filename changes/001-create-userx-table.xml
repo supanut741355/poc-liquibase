@@ -17,6 +17,10 @@
             </column>
             <column name="created_at" type="timestamp"/>
         </createTable>
+
+        <rollback>
+            <dropTable tableName="userx"/>
+        </rollback>
     </changeSet>
 
 </databaseChangeLog>
